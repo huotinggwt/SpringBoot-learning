@@ -7,6 +7,12 @@
     <version>0.0.1-SNAPSHOT</version>
     <name>springboot-web-quarkstart</name>
     <description>springboot-web-quarkstart</description>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.6.13</version>
+        <relativePath/> <!-- 从仓库查找父pom -->
+    </parent>
     <properties>
         <java.version>1.8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -52,7 +58,6 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <version>${spring-boot.version}</version>
                 <configuration>
                     <mainClass>com.itheima.SpringbootWebQuarkstartApplication</mainClass>
                     <skip>true</skip>
